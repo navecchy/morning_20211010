@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.width_1000 {
+    width: 1000px;
+    margin: auto;
+}
+
+.flex_space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex_end {
+    display: flex;
+    justify-content: end;
+}
+
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "header      "
+    "main        "
+    "footer      "
+    ;
+}
+
+header {
+    grid-area: header;
+}
+
+.title {
+    background-color: aqua;
+    height: 500px;
+    font-size: 2vmax;
+}
+
+.title h2 {
+    text-align: center;
+}
+
+
+main {
+    grid-area: main;
+}
+
+
+.main_contents {
+    padding: 2%;
+    font-size: 1.5vmax;
+}
+
+.main_contents ul {
+    padding: 2%;
+    padding-left: 5%;
+    list-style: disc;
+}
+
+.scrollbar {
+
+    width: 100%;
+    height: 350px;
+    border: none;
+    overflow-y: scroll;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg,#43e2c6,#3183d0);
+    border-radius: 3px;
+}
+  
+.scrollbar::-webkit-scrollbar-track {
+    background: rgba(100,100,100, .5);
+}
+
+.overview {
+    width: 100%;
+}
+
+.news_ {
+    padding-top: 3%;
+    padding-bottom: 2%;
+    border-top: 0.1rem dotted #ccc;
+}
+
+.news textarea {
+    width: 100%;
+}
+
+.contents_handler{
+    display: block;
+    width:180px;
+    font-size: 1.0rem;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding:0.6rem 1rem;
+    background: #23bd52;
+    box-sizing:border-box;
+    text-transform: uppercase;     
+    font-weight: bold; 
+    border-radius: 2.0rem;
+    
+    background-image: -moz-linear-gradient(top, #23bd52, #1ea347);
+    background-image: -webkit-linear-gradient(top, #23bd52, #1ea347);
+    background-image: linear-gradient(top, #23bd52, #1ea347);
+    background-clip: padding-box;
+}
+  
+.contents_handler a {
+    display: block;
+    color: #FFF;                
+}
+
+.contents_handler:hover {
+    background: #d2ff0c;
+}
+
+.images ul {
+    list-style: none;
+}
+
+.images ul li p img {
+    width: 100%;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.footer {
+    background-color: aqua;
+    font-size: 2vmax;
+}
